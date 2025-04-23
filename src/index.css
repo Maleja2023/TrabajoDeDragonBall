@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Títulos principales */
+h1, .MuiTypography-h1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px;
+}
+
+/* Subtítulos */
+h2, .MuiTypography-h2 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.25px;
+}
+
+/* Títulos de sección */
+h3, h4, .MuiTypography-h3, .MuiTypography-h4 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+/* Títulos menores */
+h5, h6, .MuiTypography-h5, .MuiTypography-h6 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Texto regular */
+p, .MuiTypography-body1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* Texto secundario */
+.MuiTypography-body2 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+/* Elementos de lista */
+.MuiListItemText-primary {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+.MuiListItemText-secondary {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1rem !important;
+}
+
+/* Asegurar que el texto sea visible en fondos oscuros */
+.MuiTypography-root {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones y elementos interactivos */
+.MuiButton-root {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px;
+}
+
+/* Clase utilitaria para texto en negrita */
+.text-bold {
+  font-weight: 700 !important;
+}
+
+/* Clase utilitaria para texto ligero */
+.text-light {
+  font-weight: 300 !important;
+}
+
+/* Clase utilitaria para texto regular */
+.text-regular {
+  font-weight: 400 !important;
+}
+
+/* Clase utilitaria para texto medio */
+.text-medium {
+  font-weight: 500 !important;
+}
+
+/* Clase utilitaria para texto semi-negrita */
+.text-semibold {
+  font-weight: 600 !important;
+} 

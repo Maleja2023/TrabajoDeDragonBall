@@ -1,0 +1,150 @@
+.character-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.character-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+/*cambiar de color  en el cuadro donde salen los personajes*/
+.dark-overlay {
+  background-color: rgba(243, 39, 158, 0.5);
+  padding: 20px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.transformations-paper {
+  padding: 24px;
+  margin: 0 16px 32px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.transformations-title {
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.transformations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.transformation-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.transformation-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.2);
+}
+
+.transformation-image {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  background-color: black;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.transformation-content {
+  padding: 16px;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+.transformation-name {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.transformation-power {
+  text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .character-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .dark-overlay {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .transformations-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .transformations-paper {
+    margin: 0 10px 20px;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .character-background {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .dark-overlay {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .transformations-grid {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .transformations-paper {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dark-overlay {
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 15px;
+  }
+
+  .transformations-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+}

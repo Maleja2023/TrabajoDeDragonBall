@@ -1,0 +1,23 @@
+.card {
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.2);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.card-image {
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+  transform: scale(1.2);
+  z-index: 9999;
+  position: relative;
+}

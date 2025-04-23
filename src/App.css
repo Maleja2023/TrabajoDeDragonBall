@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+   
+    min-height: calc(100vh - 64px);
+    width: 100%;
+    flex: 1;
+    padding-bottom: 60px; /* Reducido de 100px a 60px */
+}
+
+.card-container {
+    display: flex;
+    position: relative;
+    overflow: visible; 
+    z-index: 1;
+}
+  

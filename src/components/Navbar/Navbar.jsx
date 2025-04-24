@@ -43,8 +43,8 @@ const Navbar = () => {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: "black",
-          boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)",
+          backgroundColor: "purple", // Fondo morado
+          boxShadow: "0 8px 16px rgba(219, 25, 122, 0.3)",
           borderBottomLeftRadius: 12,
           borderBottomRightRadius: 12,
           zIndex: 1100

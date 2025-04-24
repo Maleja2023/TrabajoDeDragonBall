@@ -1,11 +1,11 @@
-import { Box, Container, Typography, Link, IconButton } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
     <Box
       component="footer"
       sx={{
-        backgroundColor: "black",
+        backgroundColor: "purple", // Cambiado a morado
         color: "white",
         py: 1,
         position: "fixed",
@@ -33,18 +33,14 @@ const Footer = () => {
             <Typography variant="subtitle1" sx={{ mb: 0.5 }}>
               Dragon Ball App
             </Typography>
-        
           </Box>
 
           <Box sx={{ flex: "1", minWidth: "200px", textAlign: "center" }}>
-            
             <Typography variant="body2" sx={{ mt: 0.5, fontSize: "0.8rem" }}>
               © {new Date().getFullYear()} Dragon Ball App. Todos los derechos
               reservados.
             </Typography>
           </Box>
-
-      
         </Box>
       </Container>
     </Box>

@@ -25,3 +25,11 @@
     z-index: 1;
 }
   
+.custom-navbar {
+    background-color: pink;
+    color: black;
+}
+.footer {
+    background-color: pink; /* Cambia el fondo del footer a rosado */
+    color: black; /* Asegúrate de que el texto sea legible */
+}

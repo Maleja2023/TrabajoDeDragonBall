@@ -1,0 +1,11 @@
+.card-container {
+    background-image: url('https://source.unsplash.com/1600x900/?world'); /* Imagen de Unsplash */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

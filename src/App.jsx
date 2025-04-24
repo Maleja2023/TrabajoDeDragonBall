@@ -11,6 +11,8 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import FilterPage from "./pages/FilterPage/FilterPage.jsx";
 import About from "./pages/About/About.jsx";
+import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx"; // Importa el componente de ErrorPage
+
 const App = () => {
   return (
     <>
@@ -23,6 +25,8 @@ const App = () => {
               <Route path="/personaje/:id" element={<DetailsPage />} />
               <Route path="/filter/:filterType/:filterValue" element={<FilterPage />} />
               <Route path="/about" element={<About />} />
+              {/* Ruta comodín para manejar URLs no válidas */}
+              <Route path="*" element={<ErrorPage />} />
             </Routes>
           </main>
           <Footer />

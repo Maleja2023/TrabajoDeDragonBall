@@ -21,10 +21,14 @@ const App = () => {
           <Navbar />
           <main className="main-content">
             <Routes>
+              {/* Rutas válidas */}
               <Route path="/" element={<HomePage />} />
               <Route path="/personaje/:id" element={<DetailsPage />} />
               <Route path="/filter/:filterType/:filterValue" element={<FilterPage />} />
               <Route path="/about" element={<About />} />
+              <Route path="/hombres" element={<FilterPage filterType="gender" filterValue="male" />} />
+              <Route path="/mujeres" element={<FilterPage filterType="gender" filterValue="female" />} />
+              
               {/* Ruta comodín para manejar URLs no válidas */}
               <Route path="*" element={<ErrorPage />} />
             </Routes>

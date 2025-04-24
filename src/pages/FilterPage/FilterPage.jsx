@@ -32,7 +32,7 @@ const FilterPage = () => {
     navigate(`/personaje/${id}`)
   }
 
-  // Ajustar los personajes para que la última página desaparezca
+
   const adjustedCharacters = [...characters]
   if (characters.length % itemsPerPage !== 0) {
     const extraCharacters = adjustedCharacters.splice(-(characters.length % itemsPerPage))

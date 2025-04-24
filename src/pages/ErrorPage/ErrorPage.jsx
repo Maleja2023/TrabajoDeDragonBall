@@ -11,13 +11,16 @@ const ErrorPage = () => {
 
   return (
     <div className="error-page">
-      <h1>404 - Página no encontrada</h1>
-      <p>Lo sentimos, la página que buscas no existe.</p>
-      <button className="error-button" onClick={goToHome}>
-        Devolver a la página principal
-      </button>
+      <div className="error-content">
+        <h1>404</h1>
+        <h2>Página no encontrada</h2>
+        <p>Lo sentimos, la página que buscas no existe o ha sido movida.</p>
+        <button className="error-button" onClick={goToHome}>
+          Volver a la página principal
+        </button>
+      </div>
     </div>
-  )
+  );
 };
 
 export default ErrorPage;

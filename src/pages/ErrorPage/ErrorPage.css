@@ -1,14 +1,52 @@
-.error-button {
-    background-color: #007bff;
+.error-page {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTosPdqa99bGXeFbaCt-0YLU5iap7X00i5nFw&s'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-content {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el contenido */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.error-content h1 {
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+    color: #ff4c4c; /* Rojo vibrante para el código de error */
+}
+
+.error-content h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.error-content p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.error-button {
+    background-color: #6200ea; /* Morado */
+    color: white;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-  }
-  
-  .error-button:hover {
-    background-color: #0056b3;
-  }
+    transition: background-color 0.3s ease;
+}
+
+.error-button:hover {
+    background-color: #3700b3; /* Morado más oscuro al pasar el mouse */
+}
